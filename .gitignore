@@ -30,3 +30,16 @@ bin/
 
 ## Compiled ##
 .class
+/src/Application/Program.class
+/src/Application/UI.class
+/src/boardgame/Board.class
+/src/boardgame/BoardException.class
+/src/boardgame/Piece.class
+/src/boardgame/Position.class
+/src/Chess/Pieces/King.class
+/src/Chess/Pieces/Rook.class
+/src/Chess/ChessException.class
+/src/Chess/ChessMatch.class
+/src/Chess/ChessPiece.class
+/src/Chess/ChessPosition.class
+/src/Chess/Color.class

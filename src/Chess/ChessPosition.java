@@ -19,7 +19,6 @@ public class ChessPosition {
         // matrix_col = chess_column - 'a'
         return new Position(8 - row, column - 'a');
     }
-
     protected static ChessPosition fromPosition(Position position) {
         return new ChessPosition((char) ('a' - position.getCol()), (8 - position.getRow()));
     }
