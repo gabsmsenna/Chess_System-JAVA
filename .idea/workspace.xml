@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="197896bb-f803-44d2-8cef-222f8dfa5d22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Chess/ChessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/ChessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chess/ChessPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/ChessPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/ChessMatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "gabsmsenna"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:gabsmsenna/Chess_System-JAVA.git",
+    "accountId": "6d4c1668-dfc6-41e3-a48e-0620059ecbbe"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -91,6 +105,7 @@
       <updated>1713887164863</updated>
       <workItem from="1713887165924" duration="8586000" />
       <workItem from="1713956833531" duration="5912000" />
+      <workItem from="1714317630839" duration="644000" />
     </task>
     <servers />
   </component>
