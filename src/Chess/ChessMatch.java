@@ -40,7 +40,7 @@ public class ChessMatch {
         validateSourcePosition(source);
         validateTargetPosition(source, target);
         Piece capturadePiece = makeMove(source, target);
-        return (ChessPiece) capturadePiece;
+        return (ChessPiece)capturadePiece;
     }
 
     private void validateSourcePosition(Position sourcePosition) {
