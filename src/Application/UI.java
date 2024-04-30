@@ -37,7 +37,8 @@ public class UI {
 
     // LIMPA A TELA NO TERMINAL, APÓS SER REALIZADO UM MOVIMENTO
     public static void clearScreen() {
-        System.out.print("\033[H\033[2J");;
+        System.out.print("\033[H\033[2J");
+        ;
         System.out.flush();
     }
 
@@ -47,9 +48,15 @@ public class UI {
         printCapturedPieces(captured);
         System.out.println();
         System.out.println("Turn: " + chessMatch.getTurn());
-        System.out.println("Waiting player " + chessMatch.getCurrentPlayer());
-        if (chessMatch.getCheck()) {
-            System.out.println("CHECK!");
+        if (!chessMatch.getCheckMate()) {
+            System.out.println("Waiting player " + chessMatch.getCurrentPlayer());
+            if (chessMatch.getCheck()) {
+                System.out.println("CHECK!");
+            }
+        }
+        else {
+            System.out.println("CHECKMATE!");
+            System.out.println("Winner: " + chessMatch.getCurrentPlayer());
         }
     }
 
@@ -82,12 +89,10 @@ public class UI {
 
         if (piece == null) {
             System.out.print("-" + ANSI_RESET);
-        }
-        else {
+        } else {
             if (piece.getColor() == Color.WHITE) {
                 System.out.print(ANSI_WHITE + piece + ANSI_RESET);
-            }
-            else {
+            } else {
                 System.out.print(ANSI_YELLOW + piece + ANSI_RESET);
             }
         }
@@ -96,12 +101,11 @@ public class UI {
 
     public static ChessPosition readChessPosition(Scanner scanner) {
         try {
-        String s = scanner.nextLine();
-        char column = s.charAt(0);
-        int row = Integer.parseInt(s.substring(1));
-        return new ChessPosition(column, row);
-    }
-        catch(RuntimeException e) {
+            String s = scanner.nextLine();
+            char column = s.charAt(0);
+            int row = Integer.parseInt(s.substring(1));
+            return new ChessPosition(column, row);
+        } catch (RuntimeException e) {
             throw new InputMismatchException("Error reading ChessPosition. Valid values are from a1 to h8");
         }
     }
